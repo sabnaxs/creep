@@ -1,0 +1,773 @@
+
+
+
+              <!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+    <!-- =====================================================
+         CONFIGURAÇÕES BÁSICAS DO SITE
+         ===================================================== -->
+
+    <meta charset="UTF-8">
+
+    <!-- Faz o site se adaptar ao celular -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--
+        AQUI VOCÊ COLOCA O NOME QUE APARECE NA ABA DO NAVEGADOR
+    -->
+    <title>Swan Into Pages</title>
+
+
+    <!-- =====================================================
+         LINK PARA O ARQUIVO CSS
+         NÃO PRECISA MEXER AQUI
+         ===================================================== -->
+
+    <link rel="stylesheet" href="style.css">
+
+
+    <!-- =====================================================
+         FONTES
+         ===================================================== -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600&display=swap"
+        rel="stylesheet"
+    >
+
+</head>
+
+
+<body>
+
+
+    <!-- =====================================================
+         RENDA DECORATIVA DO TOPO
+         NÃO PRECISA MEXER
+         ===================================================== -->
+
+    <div class="lace-top"></div>
+
+
+
+    <!-- =====================================================
+         CABEÇALHO DO SITE
+         ===================================================== -->
+
+    <header>
+
+        <div class="header-content">
+
+       
+
+            <!--
+                AQUI VOCÊ COLOCA O NOME DO SEU SITE
+
+                EXEMPLO:
+                Literary Lace
+                Bookish Diary
+                My Little Library
+                etc.
+            -->
+
+            <h1>Swan Into Pages</h1>
+
+
+            <!--
+                AQUI VOCÊ COLOCA UMA FRASE PEQUENA
+                QUE FICA ABAIXO DO NOME
+            -->
+
+            <p>Onde histórias se desfazem em sonhos e cada página parece uma canção à meia-noite</p>
+
+
+        
+        </div>
+
+    </header>
+
+
+
+    <!-- =====================================================
+         MENU DO SITE
+         ===================================================== -->
+
+    <nav>
+
+        <!--
+            CADA <a> É UM BOTÃO DO MENU.
+
+            O href="#reviews" faz o botão levar até
+            a parte do site que possui id="reviews".
+        -->
+
+        <a href="casa.html">casa</a>
+
+        <a href="resenhas.html">resenhas</a>
+
+        <a href="#favorites">favoritos</a>
+
+        <a href="#tbr">tbr</a>
+
+        <a href="#about">Clube Leitura</a>
+
+    </nav>
+
+
+
+    <!-- =====================================================
+         ÁREA PRINCIPAL DO SITE
+         ===================================================== -->
+
+    <main>
+
+
+
+        <!-- =================================================
+             MENU LATERAL
+             ================================================= -->
+
+        <aside>
+
+
+
+            <!-- ==============================
+                 CAIXINHA "SOBRE MIM"
+                 ============================== -->
+
+            <section class="side-box profile">
+
+
+                <!--
+                    AQUI PODERIA SER UMA FOTO SUA.
+
+                    SE QUISER COLOCAR UMA FOTO,
+                    PODE TROCAR O <div> POR:
+
+
+                <!--
+                    TÍTULO DA CAIXINHA
+                    VOCÊ PODE TROCAR
+                -->
+
+                <h2>sobre mim</h2>
+
+
+                <!--
+                    AQUI VOCÊ ESCREVE SOBRE VOCÊ.
+
+                    PODE COLOCAR:
+                    - seu nome
+                    - idade
+                    - livros favoritos
+                    - gêneros favoritos
+                    - qualquer coisa que quiser
+                -->
+
+                <p>
+
+               Para garotas que se perdem entre páginas e encontram a si mesmas nas histórias
+
+                </p>
+
+
+
+                <!--
+                    AQUI VOCÊ COLOCA O LIVRO QUE
+                    ESTÁ LENDO ATUALMENTE
+                -->
+
+                <p class="small">
+                    Leitura Atual:
+                </p>
+
+                <strong>
+                  O massacre da família Hope
+                </strong>
+
+            </section>
+
+
+
+            <!-- ==============================
+                 ESTATÍSTICAS
+                 ============================== -->
+
+            <section class="side-box">
+
+                <h2>meu perfil</h2>
+
+
+              
+                <div class="stats">
+
+                    <span>45</span>
+                    <small>livros lidos</small>
+
+
+                    <span>12</span>
+                    <small>favoritos</small>
+
+
+                    <span>86</span>
+                    <small>livros na TBR</small>
+
+                </div>
+
+            </section>
+
+
+
+            <!-- ==============================
+                 LIVROS FAVORITOS
+                 ============================== -->
+
+            <section class="side-box">
+
+                <h2>favoritos</h2>
+
+
+                <!--
+                    AQUI VOCÊ COLOCA OS SEUS LIVROS FAVORITOS.
+
+                    Para adicionar outro:
+                    <li>♡ Nome do livro</li>
+                -->
+
+                <ul>
+
+                    <li> Boys of Tommen</li>
+
+                    <li>Jantar Secreto</li>
+
+                    <li>Estilhaça-me</li>
+
+                    <li> ACOTAR</li>
+
+                </ul>
+
+            </section>
+
+
+        </aside>
+
+
+
+        <!-- =================================================
+             CONTEÚDO PRINCIPAL
+             ================================================= -->
+
+        <section class="content">
+
+
+
+            <!-- =================================================
+                 MENSAGEM DE BOAS-VINDAS
+                 ================================================= -->
+
+            <div class="welcome">
+
+
+                <p class="tiny">
+                 Resenhas de Livros
+                </p>
+
+
+                <!--
+                    TÍTULO PRINCIPAL DA MENSAGEM
+                -->
+
+                <h2>
+           averiguando possível resenha
+                </h2>
+
+
+                <!--
+                    AQUI VOCÊ ESCREVE A APRESENTAÇÃO DO SITE.
+                -->
+
+                <p>
+
+                    Este é o meu cantinho para falar sobre livros,
+                    personagens que me fizeram sofrer e histórias
+                    que eu nunca consegui esquecer.
+
+                </p>
+
+
+                <!--
+                    AQUI VOCÊ PODE COLOCAR UMA FRASE DE LIVRO.
+
+                    IMPORTANTE:
+                    se for usar uma citação de um livro,
+                    mantenha-a curta.
+                -->
+
+                <div class="quote">
+
+“Toda leitora guarda histórias que ninguém mais conhece"
+
+                </div>
+
+            </div>
+
+
+
+            <!-- =================================================
+                 RESENHAS
+                 ================================================= -->
+
+            <section id="reviews">
+
+
+                <div class="section-title">
+
+               
+
+                  próxima  review
+
+
+                </div>
+
+
+
+                <!-- =================================================
+                     RESENHA PRINCIPAL / LIVRO EM DESTAQUE
+                     ================================================= -->
+
+                <article class="review-card">
+
+
+
+                    <!-- ==========================================
+                         CAPA DO LIVRO
+                         ========================================== -->
+
+                    <div class="book-cover">
+
+
+                    
+
+                       
+
+                
+
+                        <img
+                            class="book-image"
+                            src="https://m.media-amazon.com/images/I/81Q55DW5aqL._UF1000,1000_QL80_.jpg"
+                            alt="Capa do livro Binding 13"
+                        >
+
+                    </div>
+
+
+
+                    <!-- ==========================================
+                         INFORMAÇÕES DA RESENHA
+                         ========================================== -->
+
+                    <div class="review-info">
+
+
+                        <!--
+                            AQUI VOCÊ COLOCA OS GÊNEROS DO LIVRO.
+                        -->
+
+                        <p class="category">
+
+                            romance · drama · young adult
+
+                        </p>
+
+
+
+                        <!--
+                            NOME DO LIVRO 
+
+                            AQUI VOCÊ COLOCA:
+                            Binding 13
+                            Caraval
+                            Noiva
+                            etc.
+                        -->
+
+                        <h3>
+                            Binding 13
+                        </h3>
+
+
+
+                        <!--
+                             NOME DA AUTORA 
+                        -->
+
+                        <p class="author">
+
+                            Chloe Walsh
+
+                        </p>
+
+
+
+                        <!--
+                             NOTA 
+
+                 
+
+                        <div class="stars">
+
+                            ★ ★ ★ ★ ★
+
+                        </div>
+
+
+
+                        <!--
+                           DESCRIÇÃO DA SUA RESENHA 
+
+                            AQUI É O TEXTO PRINCIPAL.
+
+                            Escreva o que você achou do livro.
+
+                            Pode falar:
+                            - história
+                            - personagens
+                            - romance
+                            - escrita
+                            - sentimentos
+                            - pontos positivos
+                            - pontos negativos
+                            - etc.
+                        -->
+
+                        <p>
+
+                            Uma história sobre amizade,
+                            amor, família e todas aquelas
+                            pequenas coisas que fazem a gente
+                            se apegar completamente aos personagens.
+
+                        </p>
+
+
+
+                      
+
+                        <div class="tags">
+
+                            <span>♡ romance</span>
+
+                            <span>♡ found family</span>
+
+                            <span>♡ drama</span>
+
+                        </div>
+
+
+
+                        <!--
+                            BOTÃO PARA LER A RESENHA COMPLETA.
+
+                            Por enquanto ele não leva para outra página.
+
+                            Depois podemos criar uma página individual
+                            para cada livro.
+                        -->
+
+                        <a class="read-more" href="binding.html">
+
+                            read my review →
+
+                        </a>
+
+
+                    </div>
+
+                </article>
+
+
+            </section>
+
+
+
+            <!-- =================================================
+                 LIVROS RECENTES
+                 ================================================= -->
+
+            <section>
+
+
+                <div class="section-title">
+
+             
+
+                   recentes reviewed
+
+         
+
+                </div>
+
+
+
+                <div class="book-grid">
+
+
+
+                    <!-- ==========================================
+                         LIVRO 1
+                         ========================================== -->
+
+                    <article class="mini-book">
+
+
+                        <img
+                            class="mini-cover"
+                            src="https://m.media-amazon.com/images/I/71AeB1+8dZL._AC_UF1000,1000_QL80_.jpg"
+                            alt="Capa do livro 1"
+                        >
+
+
+                        <!--
+                            NOME DO LIVRO
+                        -->
+
+                        <h3>
+                         Janatr Secreto
+                        </h3>
+
+
+                        <!--
+                            AUTORA
+                        -->
+
+                        <p>
+                         Raphael Montes
+                        </p>
+
+
+                        <!--
+                            NOTA
+                        -->
+
+                        <div class="stars">
+                            ★ ★ ★ ★ ☆
+                        </div>
+
+
+                        <!--
+                            LINK DA RESENHA
+                        -->
+
+                        <a href="#">
+                            read →
+                        </a>
+
+                    </article>
+
+
+
+                    <!-- ==========================================
+                         LIVRO 2
+                         ========================================== -->
+
+                    <article class="mini-book">
+
+
+                        <!--
+                            ⭐ CAPA DO LIVRO 2 ⭐
+                        -->
+
+                        <img
+                            class="mini-cover"
+                            src="https://cdn.awsli.com.br/600x450/1576/1576093/produto/58796072/1de7f6eaa8.jpg"
+                            alt="Capa"
+                        >
+
+
+                        <h3>
+                           Restaura-me
+                        </h3>
+
+
+                        <p>
+                            Tahereh Mafi
+                        </p>
+
+
+                        <div class="stars">
+                            ★ ★ ★  ☆ ☆
+                        </div>
+
+
+                        <a href="#">
+                            read →
+                        </a>
+
+                    </article>
+
+
+
+                    <!-- ==========================================
+                         LIVRO 3
+                         ========================================== -->
+
+                    <article class="mini-book">
+
+
+                        <!--
+                            ⭐ CAPA DO LIVRO 3 ⭐
+                        -->
+
+                        <img
+                            class="mini-cover"
+                            src="https://m.media-amazon.com/images/I/915SA2hf3iL._UF1000,1000_QL80_.jpg"
+                            alt="Capa"
+                        >
+
+
+                        <h3>
+                           Releasing 10 
+                        </h3>
+
+
+                        <p>
+                        Chloe Walsh
+                        </p>
+
+
+                        <div class="stars">
+                            ★ ★ ★ ★  ★ 
+
+<br>
+<br>
+                        <a href="#">
+                            read →
+                        </a>
+
+                    </article>
+
+
+                </div>
+
+            </section>
+
+
+
+            <!-- =================================================
+                 TBR
+                 ================================================= -->
+
+            <section id="tbr" class="tbr">
+
+
+                <div class="section-title">
+
+            
+
+                    minha TBR
+
+                
+
+                </div>
+
+
+                <!--
+                    TEXTO DE INTRODUÇÃO DA TBR
+                -->
+
+                <p>
+
+                    livros que estão pacientemente esperando
+                    para destruir meu emocional:
+
+                </p>
+
+
+               
+                <div class="tbr-list">
+
+                    <div>
+                      Alchemised
+                    </div>
+
+                    <div>
+                     Tudo ou Nada
+                    </div>
+
+                    <div>
+                      Corte de chamas prateadas
+                    </div>
+
+                    <div>
+                    Dias Perfeitos
+                    </div>
+
+                </div>
+
+            </section>
+
+
+
+            <!-- =================================================
+                 SOBRE O BLOG
+                 ================================================= -->
+
+            <section id="about" class="about">
+
+
+                <div class="section-title">
+
+                  
+   SOBRE O BLOG
+
+                
+
+                </div>
+
+
+
+                <p>
+
+                 Swan Into Pages é um pequeno arquivo
+                    de leituras, resenhas e pensamentos
+                    sobre livros.
+
+                </p>
+
+
+                <p>
+
+                    Feito com muito amor, café e personagens
+                    fictícios que provavelmente ocupam espaço
+                    demais na minha cabeça.
+
+                </p>
+
+
+            </section>
+
+
+        </section>
+
+    </main>
+
+
+
+  
+      
+
+    <!-- Renda decorativa inferior -->
+
+    <div class="lace-bottom"></div>
+
+
+</body>
+
+</html>
