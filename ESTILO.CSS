@@ -1,0 +1,480 @@
+/* =========================================================
+   CONFIGURAÇÕES GERAIS
+   ========================================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* =========================================================
+   FUNDO DA PÁGINA
+   ========================================================= */
+body {
+
+    min-height: 100vh;
+
+    /* Fundo rosado com pontinhos */
+    background-color: #f8edf1;
+
+    background-image:
+        radial-gradient(
+            #d8b9c4 1px,
+            transparent 1px
+        );
+
+    background-size: 18px 18px;
+
+    color: #563b45;
+
+    font-family: "Cormorant Garamond", serif;
+
+    padding: 0 20px 30px;
+
+}
+
+/* =========================================================
+   RENDA DECORATIVA
+   ========================================================= */
+
+
+.lace-top,
+.lace-bottom {
+
+    height:24px;
+
+    background:
+
+        radial-gradient(
+            circle at 50% 100%,
+            #ffffff 0 8px,
+            transparent 9px
+        )
+
+        0 0 / 18px 18px repeat-x;
+
+    background-color: #f1dce1;
+
+    border-bottom: 2px solid #e4c2ca;
+}
+
+
+.lace-bottom {
+
+    border-top: 2px solid #e4c2ca;
+
+    border-bottom: none;
+}
+
+
+
+/* =========================================================
+   ÁREA PRINCIPAL
+   ========================================================= */
+
+.pagina {
+
+    width: 100%;
+
+    max-width: 600px;
+
+    margin: 0 auto;
+
+}
+
+
+
+/* =========================================================
+   CABEÇALHO
+   ========================================================= */
+
+header {
+
+    text-align: center;
+
+    margin-bottom: 25px;
+
+}
+
+
+.logo {
+
+    color: #704b5a;
+
+    font-family: "Playfair Display", serif;
+
+    font-size: 34px;
+
+    text-decoration: none;
+
+}
+
+
+.logo:hover {
+
+    color: #8f5c6e;
+
+}
+
+
+.subtitulo {
+
+    margin-top: 7px;
+
+    color: #987681;
+
+    font-size: 17px;
+
+    font-style: italic;
+
+}
+
+
+
+
+/* =========================================================
+   CAIXA DE CADASTRO
+   ========================================================= */
+
+.caixa-cadastro {
+
+    position: relative;
+
+    background: rgba(255, 250, 252, 0.96);
+
+    border: 1px solid #cfaeb9;
+
+    padding: 45px;
+
+    box-shadow:
+        0 10px 30px rgba(80, 50, 60, 0.12);
+
+}
+
+
+/* Moldura interna */
+
+.caixa-cadastro::before {
+
+    content: "";
+
+    position: absolute;
+
+    top: 12px;
+    left: 12px;
+    right: 12px;
+    bottom: 12px;
+
+    border: 1px dashed #d8bcc5;
+
+    pointer-events: none;
+
+}
+
+
+
+/* =========================================================
+   TÍTULO
+   ========================================================= */
+
+h1 {
+
+    text-align: center;
+
+    font-family: "Playfair Display", serif;
+
+    font-size: 34px;
+
+    font-weight: 500;
+
+    color: #5e3d49;
+
+    margin-bottom: 10px;
+
+}
+
+
+
+/* =========================================================
+   DESCRIÇÃO
+   ========================================================= */
+
+.descricao {
+
+    text-align: center;
+
+    color: #90717c;
+
+    font-size: 17px;
+
+    line-height: 1.5;
+
+    margin-bottom: 30px;
+
+}
+
+
+
+/* =========================================================
+   CAMPOS
+   ========================================================= */
+
+.campo {
+
+    margin-bottom: 20px;
+
+}
+
+
+.campo label {
+
+    display: block;
+
+    margin-bottom: 6px;
+
+    color: #684653;
+
+    font-size: 17px;
+
+    font-weight: 600;
+
+}
+
+
+.campo input {
+
+    width: 100%;
+
+    padding: 13px 15px;
+
+    border: 1px solid #d5b5c0;
+
+    background: #fff;
+
+    color: #563b45;
+
+    font-family: "Cormorant Garamond", serif;
+
+    font-size: 17px;
+
+    outline: none;
+
+}
+
+
+.campo input:focus {
+
+    border-color: #9b6477;
+
+    box-shadow:
+        0 0 0 2px rgba(155, 100, 119, 0.10);
+
+}
+
+
+.campo input::placeholder {
+
+    color: #b99da7;
+
+}
+
+
+
+/* =========================================================
+   TERMOS
+   ========================================================= */
+
+.termos {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 8px;
+
+    margin: 20px 0;
+
+    color: #80616d;
+
+    font-size: 15px;
+
+}
+
+
+.termos input {
+
+    accent-color: #956276;
+
+}
+
+
+
+/* =========================================================
+   BOTÃO
+   ========================================================= */
+
+.botao {
+
+    width: 100%;
+
+    padding: 14px;
+
+    border: none;
+
+    background: #8f5c6e;
+
+    color: white;
+
+    font-family: "Cormorant Garamond", serif;
+
+    font-size: 19px;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+
+}
+
+
+.botao:hover {
+
+    background: #714657;
+
+}
+
+
+
+/* =========================================================
+   LOGIN
+   ========================================================= */
+
+.login {
+
+    text-align: center;
+
+    margin-top: 22px;
+
+    color: #80616d;
+
+    font-size: 16px;
+
+}
+
+
+.login a {
+
+    color: #8f5c6e;
+
+    font-weight: bold;
+
+    text-decoration: none;
+
+}
+
+
+.login a:hover {
+
+    text-decoration: underline;
+
+}
+
+
+
+/* =========================================================
+   RODAPÉ
+   ========================================================= */
+
+footer {
+
+    text-align: center;
+
+    margin-top: 25px;
+
+    color: #80616d;
+
+    font-size: 15px;
+
+    line-height: 1.5;
+
+}
+
+
+footer p:first-child {
+
+    font-family: "Playfair Display", serif;
+
+    font-size: 18px;
+
+}
+
+
+
+/* =========================================================
+   RESPONSIVIDADE
+   ========================================================= */
+
+@media (max-width: 600px) {
+
+    body {
+
+        padding: 0 12px 20px;
+
+    }
+
+
+    .caixa-cadastro {
+
+        padding: 35px 22px;
+
+    }
+
+
+    .logo {
+
+        font-size: 28px;
+
+    }
+
+
+    h1 {
+
+        font-size: 29px;
+
+    }
+
+
+    .descricao {
+
+        font-size: 16px;
+
+    }
+
+}
+
+
+/* =========================================================
+   RODAPÉ
+   ========================================================= */
+
+footer {
+
+    text-align: center;
+
+    padding: 30px 15px;
+
+    color: #a56c7a;
+
+    font-family:
+        "Cormorant Garamond",
+        serif;
+}
+
+
+footer p {
+
+    font-size: 11px;
+
+    opacity: .7;
+}

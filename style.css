@@ -1,0 +1,1038 @@
+/* =========================================================
+   CONFIGURAÇÕES GERAIS
+   Aqui definimos fonte, cores e comportamento do site.
+   ========================================================= */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+
+    margin: 0;
+
+    /*
+        FUNDO DO SITE
+
+        Aqui criamos aquele fundo clarinho
+        com pequenos pontinhos.
+    */
+
+    background:
+        radial-gradient(
+            #e9cdd4 1px,
+            transparent 1px
+        ),
+
+        #fff9fa;
+
+    background-size: 12px 12px;
+
+    /*
+        COR PRINCIPAL DOS TEXTOS
+    */
+
+    color: #70535b;
+
+    /*
+        FONTE PADRÃO
+    */
+
+    font-family: Georgia, serif;
+}
+
+
+
+/* =========================================================
+   RENDA DO TOPO E DO FINAL
+   ========================================================= */
+
+.lace-top,
+.lace-bottom {
+
+    height: 24px;
+
+    background:
+
+        radial-gradient(
+            circle at 50% 100%,
+            #ffffff 0 8px,
+            transparent 9px
+        )
+
+        0 0 / 18px 18px repeat-x;
+
+    background-color: #f1dce1;
+
+    border-bottom: 2px solid #e4c2ca;
+}
+
+
+.lace-bottom {
+
+    border-top: 2px solid #e4c2ca;
+
+    border-bottom: none;
+}
+
+
+
+/* =========================================================
+   CABEÇALHO
+
+   ========================================================= */
+
+header {
+
+    background: #f8e7eb;
+
+    border-bottom: 1px solid #dcb8c2;
+
+    text-align: center;
+
+    padding: 30px 15px 22px;
+}
+
+
+.header-content {
+
+    max-width: 900px;
+
+    margin: auto;
+}
+
+
+
+
+
+/*
+    TÍTULO PRINCIPAL DO SITE
+
+*/
+
+header h1 {
+
+    margin: 2px 0;
+
+    color: #a76679;
+
+    font-family: "Playfair Display", serif;
+
+    font-size: clamp(
+        38px,
+        8vw,
+        70px
+    );
+
+    font-weight: 500;
+
+    letter-spacing: 3px;
+
+    text-transform: lowercase;
+}
+
+
+
+/*
+    FRASE ABAIXO DO TÍTULO
+*/
+
+header p {
+
+    margin: 5px;
+
+    font-family: "Cormorant Garamond", serif;
+
+    font-size: 18px;
+
+    font-style: italic;
+}
+
+
+
+
+
+
+
+/* =========================================================
+   MENU
+   ========================================================= */
+
+nav {
+
+    display: flex;
+
+    justify-content: center;
+
+    flex-wrap: wrap;
+
+    gap: 5px;
+
+    /*
+        COR DO MENU
+    */
+
+    background: #d99aaa;
+
+    padding: 9px;
+}
+
+
+nav a {
+
+    color: white;
+
+    text-decoration: none;
+
+    font-size: 14px;
+
+    padding: 6px 15px;
+
+    border-left:
+        1px solid
+        rgba(255,255,255,.5);
+
+    text-transform: lowercase;
+}
+
+
+/*
+    O QUE ACONTECE QUANDO PASSA O MOUSE
+*/
+
+nav a:hover {
+
+    background: #c47f91;
+}
+
+
+
+/* =========================================================
+   ORGANIZAÇÃO DA PÁGINA
+   Aqui dividimos:
+   ESQUERDA = menu lateral
+   DIREITA = conteúdo
+   ========================================================= */
+
+main {
+
+    width: min(
+        1050px,
+        94%
+    );
+
+    margin: 25px auto;
+
+    display: grid;
+
+    grid-template-columns:
+        245px 1fr;
+
+    gap: 25px;
+}
+
+
+
+/* =========================================================
+   CAIXINHAS DO MENU LATERAL
+   ========================================================= */
+
+.side-box {
+
+    background:
+        rgba(255,255,255,.85);
+
+    border:
+        1px solid
+        #dfc0c8;
+
+    margin-bottom: 20px;
+
+    padding: 17px;
+
+    /*
+        SOMBRA DAS CAIXINHAS
+    */
+
+    box-shadow:
+        4px 4px 0
+        #efdce0;
+}
+
+
+
+/*
+    TÍTULO DAS CAIXINHAS
+
+    Exemplo:
+    about me
+    my shelf
+    favorites
+*/
+
+.side-box h2 {
+
+    margin:
+        -17px
+        -17px
+        14px;
+
+    padding: 9px;
+
+    background: #d88fa0;
+
+    color: white;
+
+    font-family:
+        "Playfair Display",
+        serif;
+
+    text-align: center;
+
+    font-size: 18px;
+
+    font-weight: 500;
+}
+
+
+
+/* Caixa "sobre mim" */
+
+.profile {
+
+    text-align: center;
+}
+
+
+
+
+
+
+
+/* Texto das caixinhas */
+
+.side-box p {
+
+    font-size: 14px;
+
+    line-height: 1.7;
+}
+
+
+
+.small {
+
+    color: #a67a83;
+
+    margin-bottom: 3px;
+}
+
+
+
+/* Decoração entre os textos */
+
+.divider {
+
+    color: #d28d9e;
+
+    margin: 12px 0;
+}
+
+
+
+/* =========================================================
+   ESTATÍSTICAS
+   ========================================================= */
+
+.stats {
+
+    display: grid;
+
+    grid-template-columns:
+        55px 1fr;
+
+    gap: 7px;
+
+    font-size: 13px;
+}
+
+
+.stats span {
+
+    color: #b76e81;
+
+    font-weight: bold;
+}
+
+
+
+/* Lista de favoritos */
+
+.side-box ul {
+
+    list-style: none;
+
+    padding: 0;
+
+    margin: 0;
+}
+
+
+.side-box li {
+
+    padding: 7px 0;
+
+    border-bottom:
+        1px dotted
+        #d9b8c0;
+
+    font-size: 13px;
+}
+
+
+
+/* =========================================================
+   CONTEÚDO PRINCIPAL
+   ========================================================= */
+
+.welcome,
+.about,
+.tbr {
+
+    background:
+        rgba(255,255,255,.88);
+
+    border:
+        1px solid
+        #dfc0c8;
+
+    padding: 25px;
+
+    margin-bottom: 25px;
+
+    text-align: center;
+
+    box-shadow:
+        4px 4px 0
+        #efdce0;
+}
+
+
+
+/* Texto pequeno "welcome..." */
+
+.tiny {
+
+    color: #c37c8e;
+
+    font-size: 12px;
+
+    letter-spacing: 2px;
+}
+
+
+
+/* Título Welcome, reader */
+
+.welcome h2 {
+
+    color: #a66678;
+
+    font-family:
+        "Playfair Display",
+        serif;
+
+    font-size: 32px;
+
+    margin: 8px 0;
+}
+
+
+
+/* Texto da apresentação */
+
+.welcome p {
+
+    line-height: 1.7;
+
+    max-width: 650px;
+
+    margin: auto;
+}
+
+
+
+/* Frase */
+
+.quote {
+
+    margin-top: 18px;
+
+    color: #aa7180;
+
+    font-family:
+        "Cormorant Garamond",
+        serif;
+
+    font-style: italic;
+
+    font-size: 18px;
+}
+
+
+
+/* =========================================================
+   TÍTULOS:
+   latest review
+   recently reviewed
+   my TBR
+   ========================================================= */
+
+.section-title {
+
+    margin: 25px 0 12px;
+
+    text-align: center;
+
+    color: #a76577;
+
+    font-family:
+        "Playfair Display",
+        serif;
+
+    font-size: 21px;
+
+    text-transform: lowercase;
+}
+
+
+.section-title span {
+
+    color: #d18c9d;
+
+    margin: 0 8px;
+}
+
+
+
+/* =========================================================
+   RESENHA PRINCIPAL
+   ========================================================= */
+
+.review-card {
+
+    display: grid;
+
+    /*
+        PRIMEIRA COLUNA =
+        CAPA DO LIVRO
+
+        SEGUNDA =
+        INFORMAÇÕES
+    */
+
+    grid-template-columns:
+        190px 1fr;
+
+    gap: 25px;
+
+    padding: 25px;
+
+    background: #fffafa;
+
+    border:
+        1px solid
+        #dfc0c8;
+
+    box-shadow:
+        4px 4px 0
+        #efdce0;
+}
+
+
+
+/* =========================================================
+   ⭐⭐ IMAGEM DA CAPA PRINCIPAL ⭐⭐
+   ========================================================= */
+
+.book-cover {
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: flex-start;
+}
+
+
+
+/*
+    ESSA É A IMAGEM QUE VOCÊ COLOCOU NO HTML.
+
+    width = largura da capa
+    height = altura da capa
+
+    object-fit: cover faz a imagem preencher
+    o espaço sem ficar deformada.
+*/
+
+.book-image {
+
+    width: 145px;
+
+    height: 210px;
+
+    object-fit: cover;
+
+    /*
+        BORDA BRANCA DA CAPA
+    */
+
+    border: 7px double white;
+
+    /*
+        SOMBRA
+    */
+
+    box-shadow:
+        5px 5px 0
+        #d9b5bd;
+}
+
+
+
+/* =========================================================
+   INFORMAÇÕES DA RESENHA
+   ========================================================= */
+
+.category {
+
+    color: #b77b88;
+
+    font-size: 12px;
+
+    text-transform: lowercase;
+
+    letter-spacing: 1px;
+}
+
+
+
+/* NOME DO LIVRO */
+
+.review-info h3 {
+
+    margin: 5px 0;
+
+    color: #8f5868;
+
+    font-family:
+        "Playfair Display",
+        serif;
+
+    font-size: 32px;
+}
+
+
+
+/* NOME DA AUTORA */
+
+.author {
+
+    margin-top: 0;
+
+    font-style: italic;
+
+    color: #a77a83;
+}
+
+
+
+/* ESTRELAS */
+
+.stars {
+
+    color: #c17b8d;
+
+    letter-spacing: 3px;
+
+    margin: 10px 0;
+}
+
+
+
+/* TEXTO DA RESENHA */
+
+.review-info >
+p:not(.category):not(.author) {
+
+    line-height: 1.7;
+
+    font-size: 14px;
+}
+
+
+
+/* TAGS */
+
+.tags {
+
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 6px;
+
+    margin: 15px 0;
+}
+
+
+.tags span {
+
+    padding: 5px 9px;
+
+    background: #f4e0e4;
+
+    border:
+        1px solid
+        #e2c2ca;
+
+    font-size: 11px;
+
+    color: #9b6472;
+}
+
+
+
+/* LINK "READ MY REVIEW" */
+
+.read-more,
+.mini-book a {
+
+    color: #ad687a;
+
+    font-weight: bold;
+
+    font-size: 13px;
+
+    text-decoration: none;
+}
+
+
+.read-more:hover,
+.mini-book a:hover {
+
+    text-decoration: underline;
+}
+
+
+
+/* =========================================================
+   LIVROS MENORES
+   ========================================================= */
+
+.book-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 15px;
+}
+
+
+.mini-book {
+
+    padding: 15px;
+
+    background:
+        rgba(255,255,255,.9);
+
+    border:
+        1px solid
+        #dfc0c8;
+
+    text-align: center;
+
+    box-shadow:
+        3px 3px 0
+        #efdce0;
+}
+
+
+
+/* =========================================================
+   ⭐⭐ CAPAS DOS LIVROS MENORES ⭐⭐
+   ========================================================= */
+
+/*
+    IMPORTANTE:
+
+    Agora .mini-cover é uma IMAGEM.
+
+    O link da imagem está no HTML.
+
+    Exemplo:
+
+    <img
+        class="mini-cover"
+        src="LINK-DA-CAPA"
+        alt="Capa do livro"
+    >
+*/
+
+.mini-cover {
+
+    width: 100%;
+
+    height: 300px;
+
+    object-fit: cover;
+
+    display: block;
+
+    margin-bottom: 12px;
+
+    border: 5px double white;
+
+    box-shadow:
+        3px 3px 0
+        #d9b5bd;
+}
+
+
+
+/* Nome dos livros */
+
+.mini-book h3 {
+
+    margin: 5px 0;
+
+    color: #8f5868;
+
+    font-family:
+        "Playfair Display",
+        serif;
+}
+
+
+
+/* Autora */
+
+.mini-book p {
+
+    font-size: 12px;
+
+    color: #a47a83;
+}
+
+
+
+/* Estrelas pequenas */
+
+.mini-book .stars {
+
+    font-size: 12px;
+}
+
+
+
+/* =========================================================
+   TBR
+   ========================================================= */
+
+.tbr-list {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, 1fr);
+
+    gap: 8px;
+
+    margin-top: 15px;
+}
+
+
+.tbr-list div {
+
+    background: #f8e9ec;
+
+    border:
+        1px solid
+        #e3c7cd;
+
+    padding: 10px;
+
+    font-size: 13px;
+}
+
+
+
+/* =========================================================
+   RODAPÉ
+   ========================================================= */
+
+footer {
+
+    text-align: center;
+
+    padding: 30px 15px;
+
+    color: #a56c7a;
+
+    font-family:
+        "Cormorant Garamond",
+        serif;
+}
+
+
+footer p {
+
+    font-size: 11px;
+
+    opacity: .7;
+}
+
+
+
+/* =========================================================
+   CELULAR
+   ========================================================= */
+
+@media (max-width: 700px) {
+
+
+    /*
+        No celular, o menu lateral
+        fica em cima do conteúdo.
+    */
+
+    main {
+
+        grid-template-columns: 1fr;
+    }
+
+
+    aside {
+
+        display: grid;
+
+        grid-template-columns:
+            repeat(2, 1fr);
+
+        gap: 12px;
+    }
+
+
+    .side-box {
+
+        margin-bottom: 0;
+    }
+
+
+    .profile {
+
+        grid-column: 1 / -1;
+    }
+
+
+    /*
+        A resenha passa a ficar:
+
+        CAPA
+
+        informações
+    */
+
+    .review-card {
+
+        grid-template-columns: 1fr;
+
+        text-align: center;
+    }
+
+
+    .book-cover {
+
+        margin-bottom: 5px;
+    }
+
+
+    .tags {
+
+        justify-content: center;
+    }
+
+
+    /*
+        Os livros ficam um embaixo do outro.
+    */
+
+    .book-grid {
+
+        grid-template-columns: 1fr;
+    }
+
+
+    .mini-cover {
+
+        height: 300px;
+    }
+
+
+    .tbr-list {
+
+        grid-template-columns: 1fr;
+    }
+
+}
+
+
+
+/* =========================================================
+   CELULARES PEQUENOS
+   ========================================================= */
+
+@media (max-width: 450px) {
+
+
+    aside {
+
+        display: block;
+    }
+
+
+    .side-box {
+
+        margin-bottom: 15px;
+    }
+
+
+    nav a {
+
+        padding:
+            6px 9px;
+
+        font-size: 12px;
+    }
+
+
+    .welcome,
+    .about,
+    .tbr,
+    .review-card {
+
+        padding: 17px;
+    }
+
+}
+
+
+
+
